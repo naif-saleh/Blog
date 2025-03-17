@@ -2,8 +2,8 @@
 <div class="md:col-span-1 col-span-3">
     <a href="http://127.0.0.1:8000/blog/laravel-34">
         <div>
-            <img class="w-full rounded-xl"
-                src="{{$posts->image}}">
+            <img class="w-full rounded-xl" src="{{ $posts->getImageUrlAttribute() }}">
+
         </div>
     </a>
     <div class="mt-3">

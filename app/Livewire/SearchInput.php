@@ -6,6 +6,7 @@ use Livewire\Component;
 
 class SearchInput extends Component
 {
+
     public $search = '';
 
     public function updatedSearch()

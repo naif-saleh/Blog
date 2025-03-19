@@ -41,6 +41,13 @@ class Post extends Model
         $query->where('published_at', '<=', now());
     }
 
+    public function scopeWithCategory($query, string $category)
+    {
+        $query->whereHas('categories', function($query) use ($category){
+            $query->where('slug', $category);
+        });
+    }
+
     public function scopeLatest($query)
     {
         $query->orderBy('published_at', 'desc');

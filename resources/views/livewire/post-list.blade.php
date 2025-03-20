@@ -11,7 +11,7 @@
                 </div>
             @endif
             @if ($this->activeCategory)
-                Filtered By: <button class="rounded-xl px-3 py-1"
+               <button class="rounded-xl px-3 py-1"
                     style='background-color: {{ $this->activeCategory->bg_color }}; color: {{ $this->activeCategory->text_color }};'>
                     {{ $this->activeCategory->title }}
                 </button>
